@@ -7,4 +7,9 @@ description: 'Profile for Keysight Technologies in the API Evangelist network. F
 created: '2026-05-05'
 modified: '2026-05-05'
 specificationVersion: '0.19'
+common:
+  - type: GitHubOrganization
+    url: https://github.com/keysight
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/keysight-technologies
 apis: []
