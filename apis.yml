@@ -25,13 +25,112 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/keysight-technologies.png
-description: 'Profile for Keysight Technologies in the API Evangelist network. Fortune F1000 (rank 617).'
+description: 'Keysight Technologies is an electronic design, emulation and test company (Fortune 1000, rank 617). Its developer surface is product-side: the CyPerf network performance and security test platform exposes a REST API (/api/v2, OAuth2/OpenID Connect via a Keycloak ''keysight'' realm) on each self-hosted or cloud controller, with an official generated Python SDK (cyperf on PyPI) and an experimental local stdio MCP server (cyperf-mcp, 100 tools). Keysight also publishes ixnetwork-restpy and snappi client libraries and Terraform modules for its virtual test products on GitHub.'
 created: '2026-05-05'
-modified: '2026-05-05'
+modified: '2026-10-19'
 specificationVersion: '0.23'
+tags:
+- Network Testing
+- Test and Measurement
+- Performance Testing
+- Security Testing
+- Electronics
+- Traffic Generation
+- MCP
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
 common:
-  - type: GitHubOrganization
-    url: https://github.com/keysight
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/keysight-technologies
-apis: []
+- type: Spectral
+  url: rules/keysight-technologies-rules.yml
+- type: Vocabulary
+  url: vocabulary/keysight-technologies-vocabulary.yml
+- type: Authentication
+  url: authentication/keysight-technologies-authentication.yml
+- type: OAuthScopes
+  url: scopes/keysight-technologies-scopes.yml
+- type: Conformance
+  url: conformance/keysight-technologies-conformance.yml
+- type: ToolCrosswalk
+  url: mcp/keysight-technologies-tool-crosswalk.yml
+- type: MCPServer
+  url: mcp/keysight-technologies-mcp.yml
+- type: Hosts
+  url: hosts/keysight-technologies-hosts.yml
+- type: Vendors
+  url: vendors/keysight-technologies-vendors.yml
+- type: SDKs
+  url: packages/keysight-technologies-packages.yml
+- type: Packages
+  url: packages/keysight-technologies-packages.yml
+- type: TermsOfService
+  url: https://www.keysight.com/us/en/contact/terms-of-use.html
+- type: Support
+  url: https://support.keysight.com/s/
+- type: PrivacyPolicy
+  url: https://www.keysight.com/us/en/contact/privacy.html
+- type: Newsroom
+  url: https://www.keysight.com/go/news
+- type: DomainSecurity
+  url: security/keysight-technologies-domain-security.yml
+- type: Website
+  url: https://www.keysight.com
+- type: GitHubOrganization
+  url: https://github.com/keysight
+- type: LinkedIn
+  url: https://www.linkedin.com/company/keysight-technologies
+- type: SourceCode
+  url: https://github.com/Keysight/cyperf-api-wrapper
+apis:
+- aid: keysight-technologies:cyperf-rest-api
+  name: Keysight CyPerf REST API
+  description: REST API of the Keysight CyPerf controller for managing agents, sessions, configurations, test execution, results, licensing and certificates. The API runs on each customer-deployed CyPerf controller (self-hosted appliance or cloud), so the host is the customer's controller address; the client SDK defaults to http://localhost.
+  humanURL: https://github.com/Keysight/cyperf-api-wrapper
+  baseURL: https://{cyperf-controller}/api/v2
+  tags:
+  - Network Testing
+  - Performance Testing
+  - Security Testing
+  properties:
+  - type: Documentation
+    url: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+  - type: SDK
+    url: https://pypi.org/project/cyperf/
+- aid: keysight-technologies:cyperf-mcp
+  name: Keysight CyPerf MCP Server
+  description: Experimental local (stdio) Model Context Protocol server published by Keysight that wraps the cyperf Python SDK as 100 tools across 15 categories for driving a CyPerf controller from an AI assistant.
+  humanURL: https://github.com/Keysight/cyperf-mcp
+  baseURL: https://{cyperf-controller}/api/v2
+  tags:
+  - MCP
+  - Network Testing
+  properties:
+  - type: Documentation
+    url: https://github.com/Keysight/cyperf-mcp/blob/main/README.md
+- aid: keysight-technologies:keysight-technologies-api
+  name: Keysight Technologies API
+  description: 'Keysight Technologies API as documented publicly: 96 operations. Contract generated from the documentation by API Evangelist (2026-10-19);
+
+    not the provider''s own document.'
+  humanURL: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/keysight-technologies-openapi-generated.yml
+    x-provenance: generated
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  method: derived
+  generated: '2026-10-19'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company's own front door answers a browser with an anti-bot challenge, so nothing behind it is reachable by any reader
+  evidence:
+  - url: https://www.keysight.com/mcp
+    status: 403
+  - url: https://www.keysight.com
+    status: 403
+x-enrichment:
+  date: '2026-10-19'
+  status: enriched
+  artifacts_added: 12
+  pass: local-v5

@@ -1,0 +1,1581 @@
+openapi: 3.1.0
+info:
+  title: Keysight Technologies API
+  version: '2026-10-19'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-19: 96 operation(s) read from 1 public documentation page(s) (each operation
+    names its page in x-source). This is not the provider''s published contract; Keysight Technologies has published no machine-readable contract
+    that the pipeline could find. Engine: anthropic.'
+  x-evidence-tiers:
+    code-example: 0
+    documentation: 96
+    pages-with-code: 0
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-19'
+  x-generator: generate-contract-from-docs.py
+  x-engine: anthropic
+  x-sources:
+  - https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+paths:
+  /api/v2/agents:
+    get:
+      operationId: get_api_v2_agents
+      tags:
+      - Api
+      summary: Get all agents
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/agents/operations/batch-delete:
+    post:
+      operationId: post_api_v2_agents_operations_batch_delete
+      tags:
+      - Api
+      summary: Start agents batch delete
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/agents/operations/exportFiles:
+    post:
+      operationId: post_api_v2_agents_operations_exportFiles
+      tags:
+      - Api
+      summary: Start agents export files
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/agents/operations/reboot:
+    post:
+      operationId: post_api_v2_agents_operations_reboot
+      tags:
+      - Api
+      summary: Start agents reboot
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/agents/operations/release:
+    post:
+      operationId: post_api_v2_agents_operations_release
+      tags:
+      - Api
+      summary: Start agents release
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/agents/operations/reserve:
+    post:
+      operationId: post_api_v2_agents_operations_reserve
+      tags:
+      - Api
+      summary: Start agents reserve
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/agents/operations/set-dpdk-mode:
+    post:
+      operationId: post_api_v2_agents_operations_set_dpdk_mode
+      tags:
+      - Api
+      summary: Start agents set DPDK mode
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/agents/operations/set-ntp:
+    post:
+      operationId: post_api_v2_agents_operations_set_ntp
+      tags:
+      - Api
+      summary: Start agents set NTP
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/agents/operations/update:
+    post:
+      operationId: post_api_v2_agents_operations_update
+      tags:
+      - Api
+      summary: Update agents
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/agents/{agentid}:
+    delete:
+      operationId: delete_api_v2_agents_agentid
+      tags:
+      - Api
+      summary: Delete an agent
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: agentid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_v2_agents_agentid
+      tags:
+      - Api
+      summary: Get agent by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: agentid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    patch:
+      operationId: patch_api_v2_agents_agentid
+      tags:
+      - Api
+      summary: Patch agent
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: agentid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers:
+    get:
+      operationId: get_api_v2_controllers
+      tags:
+      - Api
+      summary: Get controllers
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/clear-compute-resource-ownership:
+    post:
+      operationId: post_api_v2_controllers_operations_clear_compute_resource_ownership
+      tags:
+      - Api
+      summary: Clear compute resource ownership
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/clear-front-panel-port-ownership:
+    post:
+      operationId: post_api_v2_controllers_operations_clear_front_panel_port_ownership
+      tags:
+      - Api
+      summary: Clear front panel port ownership
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/clear-port-ownership:
+    post:
+      operationId: post_api_v2_controllers_operations_clear_port_ownership
+      tags:
+      - Api
+      summary: Clear port ownership
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/power-cycle-nodes:
+    post:
+      operationId: post_api_v2_controllers_operations_power_cycle_nodes
+      tags:
+      - Api
+      summary: Power cycle nodes
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/reboot-compute-resource:
+    post:
+      operationId: post_api_v2_controllers_operations_reboot_compute_resource
+      tags:
+      - Api
+      summary: Reboot compute resource
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/reboot-port:
+    post:
+      operationId: post_api_v2_controllers_operations_reboot_port
+      tags:
+      - Api
+      summary: Reboot port
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/set-app:
+    post:
+      operationId: post_api_v2_controllers_operations_set_app
+      tags:
+      - Api
+      summary: Set app
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/set-front-panel-fanout:
+    post:
+      operationId: post_api_v2_controllers_operations_set_front_panel_fanout
+      tags:
+      - Api
+      summary: Set front panel fanout
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/set-front-panel-port-link-state:
+    post:
+      operationId: post_api_v2_controllers_operations_set_front_panel_port_link_state
+      tags:
+      - Api
+      summary: Set front panel port link state
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/set-node-aggregation:
+    post:
+      operationId: post_api_v2_controllers_operations_set_node_aggregation
+      tags:
+      - Api
+      summary: Set node aggregation
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/set-node-app:
+    post:
+      operationId: post_api_v2_controllers_operations_set_node_app
+      tags:
+      - Api
+      summary: Set node app
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/set-port-link-state:
+    post:
+      operationId: post_api_v2_controllers_operations_set_port_link_state
+      tags:
+      - Api
+      summary: Set port link state on controllers.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/operations/update-port-tags:
+    post:
+      operationId: post_api_v2_controllers_operations_update_port_tags
+      tags:
+      - Api
+      summary: Update port tags on controllers.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '201':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/{controllerid}:
+    get:
+      operationId: get_api_v2_controllers_controllerid
+      tags:
+      - Api
+      summary: Get controller by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: controllerid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/{controllerid}/compute-nodes:
+    get:
+      operationId: get_api_v2_controllers_controllerid_compute_nodes
+      tags:
+      - Api
+      summary: Get controller compute nodes
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: controllerid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/{controllerid}/compute-nodes/{computenodeid}:
+    get:
+      operationId: get_api_v2_controllers_controllerid_compute_nodes_computenodeid
+      tags:
+      - Api
+      summary: Get controller compute node by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: controllerid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: computenodeid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/{controllerid}/compute-nodes/{computenodeid}/compute-resources:
+    get:
+      operationId: get_api_v2_controllers_controllerid_compute_nodes_computenodeid_compute_resource
+      tags:
+      - Api
+      summary: Get compute node compute resources
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: controllerid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: computenodeid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/{controllerid}/compute-nodes/{computenodeid}/compute-resources/{computeresourceid}:
+    get:
+      operationId: get_api_v2_controllers_controllerid_compute_nodes_computenodeid_compute_resource
+      tags:
+      - Api
+      summary: Get compute node compute resource by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: controllerid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: computenodeid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: computeresourceid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/{controllerid}/compute-nodes/{computenodeid}/ports:
+    get:
+      operationId: get_api_v2_controllers_controllerid_compute_nodes_computenodeid_ports
+      tags:
+      - Api
+      summary: Get compute node ports
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: controllerid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: computenodeid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/{controllerid}/compute-nodes/{computenodeid}/ports/{portid}:
+    get:
+      operationId: get_api_v2_controllers_controllerid_compute_nodes_computenodeid_ports_portid
+      tags:
+      - Api
+      summary: Get compute node port by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: controllerid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: computenodeid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: portid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/{controllerid}/front-panels:
+    get:
+      operationId: get_api_v2_controllers_controllerid_front_panels
+      tags:
+      - Api
+      summary: Get controller front panels
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: controllerid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/{controllerid}/front-panels/{frontpanelid}:
+    get:
+      operationId: get_api_v2_controllers_controllerid_front_panels_frontpanelid
+      tags:
+      - Api
+      summary: Get controller front panel by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: controllerid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: frontpanelid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/{controllerid}/front-panels/{frontpanelid}/ports:
+    get:
+      operationId: get_api_v2_controllers_controllerid_front_panels_frontpanelid_ports
+      tags:
+      - Api
+      summary: Get front panel ports
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: controllerid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: frontpanelid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/controllers/{controllerid}/front-panels/{frontpanelid}/ports/{portid}:
+    get:
+      operationId: get_api_v2_controllers_controllerid_front_panels_frontpanelid_ports_portid
+      tags:
+      - Api
+      summary: Get front panel port by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: controllerid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: frontpanelid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: portid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/app-categories:
+    get:
+      operationId: get_api_v2_resources_app_categories
+      tags:
+      - Api
+      summary: Get application categories
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/application-types:
+    get:
+      operationId: get_api_v2_resources_application_types
+      tags:
+      - Api
+      summary: Get application types
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/application-types/{applicationtypeid}:
+    get:
+      operationId: get_api_v2_resources_application_types_applicationtypeid
+      tags:
+      - Api
+      summary: Get application type by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: applicationtypeid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/apps:
+    get:
+      operationId: get_api_v2_resources_apps
+      tags:
+      - Api
+      summary: Get applications
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/apps/{appid}:
+    get:
+      operationId: get_api_v2_resources_apps_appid
+      tags:
+      - Api
+      summary: Get app by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: appid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/attack-categories:
+    get:
+      operationId: get_api_v2_resources_attack_categories
+      tags:
+      - Api
+      summary: Get attack categories
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/attacks:
+    get:
+      operationId: get_api_v2_resources_attacks
+      tags:
+      - Api
+      summary: Get attacks
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/attacks/{attackid}:
+    get:
+      operationId: get_api_v2_resources_attacks_attackid
+      tags:
+      - Api
+      summary: Get attack by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: attackid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/auth-profiles:
+    get:
+      operationId: get_api_v2_resources_auth_profiles
+      tags:
+      - Api
+      summary: Get auth profiles
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/auth-profiles/{authprofileid}:
+    get:
+      operationId: get_api_v2_resources_auth_profiles_authprofileid
+      tags:
+      - Api
+      summary: Get auth profile by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: authprofileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/captures:
+    get:
+      operationId: get_api_v2_resources_captures
+      tags:
+      - Api
+      summary: Get captures
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/captures/encrypted/operations/uploadFile/{uploadfileid}/result:
+    get:
+      operationId: get_api_v2_resources_captures_encrypted_operations_uploadFile_uploadfileid_resul
+      tags:
+      - Api
+      summary: Get encrypted capture upload file result
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: uploadfileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/captures/operations/uploadFile/{uploadfileid}/result:
+    get:
+      operationId: get_api_v2_resources_captures_operations_uploadFile_uploadfileid_result
+      tags:
+      - Api
+      summary: Returns the result of the file upload.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: uploadfileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/captures/{captureid}:
+    delete:
+      operationId: delete_api_v2_resources_captures_captureid
+      tags:
+      - Api
+      summary: Delete a capture resource.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: captureid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_v2_resources_captures_captureid
+      tags:
+      - Api
+      summary: Get capture by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: captureid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/captures/{captureid}/flows:
+    get:
+      operationId: get_api_v2_resources_captures_captureid_flows
+      tags:
+      - Api
+      summary: Get capture flows
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: captureid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/captures/{captureid}/flows/{flowid}/exchanges:
+    get:
+      operationId: get_api_v2_resources_captures_captureid_flows_flowid_exchanges
+      tags:
+      - Api
+      summary: Get flow exchanges
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: captureid
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: flowid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/certificates:
+    get:
+      operationId: get_api_v2_resources_certificates
+      tags:
+      - Api
+      summary: Returns all certificates.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/certificates/operations/uploadFile/{uploadfileid}/result:
+    get:
+      operationId: get_api_v2_resources_certificates_operations_uploadFile_uploadfileid_result
+      tags:
+      - Api
+      summary: Returns the result of the file upload.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: uploadfileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/certificates/{certificateid}:
+    delete:
+      operationId: delete_api_v2_resources_certificates_certificateid
+      tags:
+      - Api
+      summary: Delete a certificate resource.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: certificateid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_v2_resources_certificates_certificateid
+      tags:
+      - Api
+      summary: Returns the certificate.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: certificateid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/certificates/{certificateid}/contentFile:
+    get:
+      operationId: get_api_v2_resources_certificates_certificateid_contentFile
+      tags:
+      - Api
+      summary: Returns the certificate content file.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: certificateid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/custom-fuzzing-scripts:
+    get:
+      operationId: get_api_v2_resources_custom_fuzzing_scripts
+      tags:
+      - Api
+      summary: Returns all custom fuzzing scripts.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/custom-fuzzing-scripts/operations/uploadFile/{uploadfileid}/result:
+    get:
+      operationId: get_api_v2_resources_custom_fuzzing_scripts_operations_uploadFile_uploadfileid_r
+      tags:
+      - Api
+      summary: Returns the result of the file upload.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: uploadfileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/custom-fuzzing-scripts/{customfuzzingscriptid}:
+    delete:
+      operationId: delete_api_v2_resources_custom_fuzzing_scripts_customfuzzingscriptid
+      tags:
+      - Api
+      summary: Delete a custom fuzzing script resource.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: customfuzzingscriptid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_v2_resources_custom_fuzzing_scripts_customfuzzingscriptid
+      tags:
+      - Api
+      summary: Returns the custom fuzzing script.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: customfuzzingscriptid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/custom-fuzzing-scripts/{customfuzzingscriptid}/contentFile:
+    get:
+      operationId: get_api_v2_resources_custom_fuzzing_scripts_customfuzzingscriptid_contentFile
+      tags:
+      - Api
+      summary: Returns the custom fuzzing script content file.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: customfuzzingscriptid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/flow-library:
+    get:
+      operationId: get_api_v2_resources_flow_library
+      tags:
+      - Api
+      summary: Returns all flow library items.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/flow-library/operations/uploadFile/{uploadfileid}/result:
+    get:
+      operationId: get_api_v2_resources_flow_library_operations_uploadFile_uploadfileid_result
+      tags:
+      - Api
+      summary: Get the result of a flow library file upload operation
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: uploadfileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/flow-library/{flowlibraryid}:
+    delete:
+      operationId: delete_api_v2_resources_flow_library_flowlibraryid
+      tags:
+      - Api
+      summary: Delete a flow library resource.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: flowlibraryid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_v2_resources_flow_library_flowlibraryid
+      tags:
+      - Api
+      summary: Returns the flow library item.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: flowlibraryid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/flow-library/{flowlibraryid}/contentFile:
+    get:
+      operationId: get_api_v2_resources_flow_library_flowlibraryid_contentFile
+      tags:
+      - Api
+      summary: Returns the flow library content file.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: flowlibraryid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/global-playlists:
+    get:
+      operationId: get_api_v2_resources_global_playlists
+      tags:
+      - Api
+      summary: Get all global playlists
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/global-playlists/operations/uploadFile/{uploadfileid}/result:
+    get:
+      operationId: get_api_v2_resources_global_playlists_operations_uploadFile_uploadfileid_result
+      tags:
+      - Api
+      summary: Get the result of a global playlist file upload operation
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: uploadfileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/global-playlists/{globalplaylistid}:
+    delete:
+      operationId: delete_api_v2_resources_global_playlists_globalplaylistid
+      tags:
+      - Api
+      summary: Delete a global playlist resource.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: globalplaylistid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_v2_resources_global_playlists_globalplaylistid
+      tags:
+      - Api
+      summary: Get a global playlist by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: globalplaylistid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/global-playlists/{globalplaylistid}/contentFile:
+    get:
+      operationId: get_api_v2_resources_global_playlists_globalplaylistid_contentFile
+      tags:
+      - Api
+      summary: Get the content file of a global playlist
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: globalplaylistid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/http-library:
+    get:
+      operationId: get_api_v2_resources_http_library
+      tags:
+      - Api
+      summary: Get all HTTP libraries
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/http-library/operations/uploadFile/{uploadfileid}/result:
+    get:
+      operationId: get_api_v2_resources_http_library_operations_uploadFile_uploadfileid_result
+      tags:
+      - Api
+      summary: Get the result of an HTTP library file upload operation
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: uploadfileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/http-library/{httplibraryid}:
+    delete:
+      operationId: delete_api_v2_resources_http_library_httplibraryid
+      tags:
+      - Api
+      summary: Delete an HTTP library resource.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: httplibraryid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+    get:
+      operationId: get_api_v2_resources_http_library_httplibraryid
+      tags:
+      - Api
+      summary: Get an HTTP library by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: httplibraryid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/http-library/{httplibraryid}/contentFile:
+    get:
+      operationId: get_api_v2_resources_http_library_httplibraryid_contentFile
+      tags:
+      - Api
+      summary: Get the content file of an HTTP library
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: httplibraryid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/http-profiles:
+    get:
+      operationId: get_api_v2_resources_http_profiles
+      tags:
+      - Api
+      summary: Get all HTTP profiles
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/http-profiles/{httpprofileid}:
+    get:
+      operationId: get_api_v2_resources_http_profiles_httpprofileid
+      tags:
+      - Api
+      summary: Get an HTTP profile by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: httpprofileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/llm-api-profiles/{llmapiprofileid}:
+    get:
+      operationId: get_api_v2_resources_llm_api_profiles_llmapiprofileid
+      tags:
+      - Api
+      summary: Get an LLM API profile by ID
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: llmapiprofileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/media-files/{mediafileid}:
+    delete:
+      operationId: delete_api_v2_resources_media_files_mediafileid
+      tags:
+      - Api
+      summary: Delete a media file resource.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: mediafileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/media-library/{medialibraryid}:
+    delete:
+      operationId: delete_api_v2_resources_media_library_medialibraryid
+      tags:
+      - Api
+      summary: Delete a media library resource.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: medialibraryid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/other-library/{otherlibraryid}:
+    delete:
+      operationId: delete_api_v2_resources_other_library_otherlibraryid
+      tags:
+      - Api
+      summary: Delete an other library resource.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: otherlibraryid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/payloads/{payloadid}:
+    delete:
+      operationId: delete_api_v2_resources_payloads_payloadid
+      tags:
+      - Api
+      summary: Delete a payload resource.
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: payloadid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/pcaps/{pcapid}:
+    delete:
+      operationId: delete_api_v2_resources_pcaps_pcapid
+      tags:
+      - Api
+      summary: Delete a PCAP resource
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: pcapid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/playlists/{playlistid}:
+    delete:
+      operationId: delete_api_v2_resources_playlists_playlistid
+      tags:
+      - Api
+      summary: Delete a playlist resource
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: playlistid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/sip-library/{siplibraryid}:
+    delete:
+      operationId: delete_api_v2_resources_sip_library_siplibraryid
+      tags:
+      - Api
+      summary: Delete a SIP library resource
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: siplibraryid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/stats-profile/{statsprofileid}:
+    delete:
+      operationId: delete_api_v2_resources_stats_profile_statsprofileid
+      tags:
+      - Api
+      summary: Delete a stats profile resource
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: statsprofileid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/tls-certificates/{tlscertificateid}:
+    delete:
+      operationId: delete_api_v2_resources_tls_certificates_tlscertificateid
+      tags:
+      - Api
+      summary: Delete a TLS certificate resource
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: tlscertificateid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/tls-dhs/{tlsdhid}:
+    delete:
+      operationId: delete_api_v2_resources_tls_dhs_tlsdhid
+      tags:
+      - Api
+      summary: Delete a TLS DH resource
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: tlsdhid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/tls-keys/{tlskeyid}:
+    delete:
+      operationId: delete_api_v2_resources_tls_keys_tlskeyid
+      tags:
+      - Api
+      summary: Delete a TLS key resource
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: tlskeyid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/user-defined-apps/{userdefinedappid}:
+    delete:
+      operationId: delete_api_v2_resources_user_defined_apps_userdefinedappid
+      tags:
+      - Api
+      summary: Delete a user-defined app resource
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: userdefinedappid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/resources/voice-custom-flows/{voicecustomflowid}:
+    delete:
+      operationId: delete_api_v2_resources_voice_custom_flows_voicecustomflowid
+      tags:
+      - Api
+      summary: Delete a voice custom flow resource
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      parameters:
+      - name: voicecustomflowid
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+  /api/v2/tags:
+    get:
+      operationId: get_api_v2_tags
+      tags:
+      - Api
+      summary: Get agent tags
+      x-source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: documentation
+tags:
+- name: Api

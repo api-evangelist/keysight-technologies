@@ -1,0 +1,41 @@
+name: Keysight Technologies packages
+generated: '2026-10-19'
+method: searched
+source: https://pypi.org/pypi/cyperf/json
+packages:
+- name: cyperf
+  registry: pypi
+  url: https://pypi.org/project/cyperf/
+  language: Python
+  official: true
+  version: 26.1.2
+  published: '2026-09-22'
+  repository: https://github.com/Keysight/cyperf-api-wrapper
+  note: OpenAPI-Generator client for the Keysight CyPerf REST API; author Keysight CyPerf <support@keysight.com>
+- name: cyperf-mcp
+  registry: pypi
+  url: https://pypi.org/project/cyperf-mcp/
+  language: Python
+  official: true
+  version: 7.0.6.post4
+  published: '2026-04-16'
+  repository: https://github.com/Keysight/cyperf-mcp
+  note: Experimental stdio MCP server wrapping the cyperf SDK
+- name: ixnetwork-restpy
+  registry: pypi
+  url: https://pypi.org/project/ixnetwork-restpy/
+  language: Python
+  official: true
+  version: 1.12.2
+  published: '2026-10-16'
+  repository: https://github.com/OpenIxia/ixnetwork_restpy
+  note: 'Author: Keysight ISG IxNetwork team (keysight.com address); client for the IxNetwork REST API'
+- name: snappi
+  registry: pypi
+  url: https://pypi.org/project/snappi/
+  language: Python
+  official: false
+  version: 1.62.0
+  published: '2026-10-12'
+  repository: https://github.com/open-traffic-generator/snappi
+  note: Open Traffic Generator SDK, author listed as Keysight Technologies; the OTG project is an open community project, so not marked first-party

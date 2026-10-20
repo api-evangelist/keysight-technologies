@@ -1,0 +1,10 @@
+name: Keysight CyPerf OAuth scopes
+generated: '2026-10-19'
+method: searched
+source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+docs: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md#documentation-for-authorization
+scopes:
+- name: offline_access
+  description: Required.
+- name: openid
+  description: Required.

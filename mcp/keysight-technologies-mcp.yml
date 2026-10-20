@@ -1,0 +1,315 @@
+name: Keysight CyPerf MCP Server
+generated: '2026-10-19'
+method: searched
+source: https://github.com/Keysight/cyperf-mcp/blob/main/README.md
+status: experimental
+deployment:
+  mode: local-stdio
+  install: pip install cyperf-mcp
+  package: https://pypi.org/project/cyperf-mcp/
+  auth: oauth
+  verified: searched
+  note: 'README: "Stdio transport (for AI assistant integration): cyperf-mcp"; connects to a customer CyPerf controller host configured per profile. No hosted endpoint.'
+tool_count: 100
+tools_evidence: documented (README tool catalog table); live tools/list not called
+tools:
+- name: sessions_list
+  category: Sessions
+  description: List all sessions with optional search/filter
+- name: sessions_create
+  category: Sessions
+  description: Create a new session
+- name: sessions_get
+  category: Sessions
+  description: Get session details by ID
+- name: sessions_delete
+  category: Sessions
+  description: Delete one or more sessions (stops running tests first)
+- name: sessions_update
+  category: Sessions
+  description: Update session properties
+- name: sessions_get_config
+  category: Sessions
+  description: Get session configuration
+- name: sessions_save_config
+  category: Sessions
+  description: Save session as a reusable config (this is how to create new configs)
+- name: sessions_load_config
+  category: Sessions
+  description: Load a config into session
+- name: sessions_get_meta
+  category: Sessions
+  description: Get session metadata
+- name: sessions_get_test
+  category: Sessions
+  description: Get session test info (status, progress)
+- name: sessions_add_applications
+  category: Sessions
+  description: Add applications by name to a traffic profile
+- name: sessions_add_attacks
+  category: Sessions
+  description: Add attacks by name to an attack profile
+- name: sessions_get_applications
+  category: Sessions
+  description: List applications in a traffic profile
+- name: sessions_get_attacks
+  category: Sessions
+  description: List attacks in an attack profile
+- name: sessions_get_app_actions
+  category: Sessions
+  description: List actions and params for an application
+- name: sessions_set_app_action_param
+  category: Sessions
+  description: Set an action parameter value
+- name: sessions_remove_app_action
+  category: Sessions
+  description: Remove an action from an application
+- name: sessions_remove_application
+  category: Sessions
+  description: Remove an application (auto-deletes empty traffic profile)
+- name: sessions_remove_attack
+  category: Sessions
+  description: Remove an attack (auto-deletes empty attack profile)
+- name: sessions_assign_agents
+  category: Sessions
+  description: Assign agents to named network segments
+- name: sessions_rename_network_segments
+  category: Sessions
+  description: Rename network segments
+- name: sessions_get_network_segments
+  category: Sessions
+  description: List network segments with IP range details
+- name: sessions_set_network_ip_range
+  category: Sessions
+  description: Update IP range properties on a segment
+- name: sessions_disable_automatic_network
+  category: Sessions
+  description: Disable automatic IP on all segments
+- name: sessions_set_objective_and_timeline
+  category: Sessions
+  description: Set test objective type, value, and duration
+- name: agents_list
+  category: Agents
+  description: List all agents with optional search/filter
+- name: agents_get
+  category: Agents
+  description: Get agent details by ID
+- name: agents_delete
+  category: Agents
+  description: Delete one or more agents
+- name: agents_update
+  category: Agents
+  description: Update agent properties
+- name: agents_reserve
+  category: Agents
+  description: Reserve agents for testing
+- name: agents_release
+  category: Agents
+  description: Release reserved agents
+- name: agents_reboot
+  category: Agents
+  description: Reboot agents
+- name: agents_set_dpdk
+  category: Agents
+  description: Set DPDK mode on agents
+- name: agents_set_ntp
+  category: Agents
+  description: Set NTP configuration on agents
+- name: agents_tags
+  category: Agents
+  description: List agent tags
+- name: agents_export_files
+  category: Agents
+  description: Export agent files (logs, configs)
+- name: configs_list
+  category: Configurations
+  description: List configurations with optional search/filter (includes PQC/Kyber/TLS configs)
+- name: configs_delete
+  category: Configurations
+  description: Delete one or more configurations
+- name: configs_update
+  category: Configurations
+  description: Update configuration metadata
+- name: configs_import
+  category: Configurations
+  description: Import configuration(s) from file (`import_all=True` for bulk)
+- name: configs_export_all
+  category: Configurations
+  description: Export configurations
+- name: configs_categories
+  category: Configurations
+  description: List configuration categories
+- name: test_start
+  category: Test Operations
+  description: Start a test run (handles init+prepare automatically, polls until running)
+- name: test_stop
+  category: Test Operations
+  description: Stop a running test. Graceful by default (ramp-down); `force=True` for immediate abort
+- name: test_calibrate
+  category: Test Operations
+  description: Start or stop test calibration
+- name: results_list
+  category: Results
+  description: List test results with optional search/filter
+- name: results_get
+  category: Results
+  description: Get result details by ID
+- name: results_delete
+  category: Results
+  description: Delete one or more results
+- name: results_stats
+  category: Results
+  description: List all stats, or get a specific stat (latest snapshot as compact table)
+- name: results_files
+  category: Results
+  description: List all files, or get a specific file by ID
+- name: results_download_config
+  category: Results
+  description: Download result configuration
+- name: results_generate_report
+  category: Results
+  description: Generate report (csv, pdf, or all)
+- name: results_tags
+  category: Results
+  description: List result tags
+- name: resources_list_apps
+  category: Resources
+  description: List applications with full search/filter/sort
+- name: resources_list_attacks
+  category: Resources
+  description: List attacks/strikes with full search/filter/sort
+- name: resources_search
+  category: Resources
+  description: 'Search, list, or get a resource. List mode (no params): `app_types`, `attack_categories`, `auth_profiles`, `captures`, `tls_certs`, `custom_fuzzing`, `payloads`, `pcaps`, `http_profiles`. Get by ID: `app`, `attack`, `capture`, `tls_cert`. Substring search: `apps`, `attacks`'
+- name: resources_delete
+  category: Resources
+  description: Delete resource by type (`capture`, `tls_cert`, `tls_key`) and ID
+- name: controllers_list
+  category: Controllers
+  description: List controllers
+- name: controllers_get
+  category: Controllers
+  description: Get controller details
+- name: controllers_nodes
+  category: Controllers
+  description: List compute nodes, or get one by ID
+- name: controllers_ports
+  category: Controllers
+  description: List ports, or get one by ID
+- name: controllers_set_app
+  category: Controllers
+  description: Set application on controller
+- name: controllers_clear_ports
+  category: Controllers
+  description: Clear port ownership
+- name: controllers_power_cycle
+  category: Controllers
+  description: Power cycle compute nodes
+- name: controllers_reboot_port
+  category: Controllers
+  description: Reboot a port
+- name: controllers_set_link_state
+  category: Controllers
+  description: Set port link state (up/down)
+- name: controllers_set_aggregation
+  category: Controllers
+  description: Set node aggregation mode
+- name: brokers_list
+  category: Brokers
+  description: List brokers
+- name: brokers_manage
+  category: Brokers
+  description: 'Create, get, update, or delete a broker (`action`: create/get/update/delete)'
+- name: licensing_list_licenses
+  category: Licensing
+  description: List all installed licenses
+- name: licensing_get_license
+  category: Licensing
+  description: Get license details
+- name: licensing_activation
+  category: Licensing
+  description: 'Activate or deactivate a license (`action`: activate/deactivate)'
+- name: licensing_sync
+  category: Licensing
+  description: Synchronize licenses
+- name: licensing_get_hostid
+  category: Licensing
+  description: Get host ID
+- name: licensing_reservation
+  category: Licensing
+  description: 'Reserve or remove a license feature (`action`: reserve/remove)'
+- name: licensing_test_connectivity
+  category: Licensing
+  description: Test backend connectivity
+- name: licensing_get_code_info
+  category: Licensing
+  description: 'Get activation or entitlement code info (`code_type`: activation/entitlement)'
+- name: licensing_get_feature_stats
+  category: Licensing
+  description: Get feature statistics
+- name: licensing_list_servers
+  category: Licensing
+  description: List license servers
+- name: licensing_manage_server
+  category: Licensing
+  description: 'Add, get, update, or delete a license server (`action`: add/get/update/delete)'
+- name: diagnostics_list_components
+  category: Diagnostics
+  description: List diagnostic components
+- name: diagnostics_export
+  category: Diagnostics
+  description: Export diagnostics
+- name: diagnostics_delete
+  category: Diagnostics
+  description: Delete diagnostics data
+- name: notifications_list
+  category: Notifications
+  description: List notifications
+- name: notifications_get
+  category: Notifications
+  description: Get notification details
+- name: notifications_delete
+  category: Notifications
+  description: Delete a notification
+- name: notifications_manage
+  category: Notifications
+  description: 'Dismiss or clean up notifications (`action`: dismiss/cleanup)'
+- name: notifications_get_counts
+  category: Notifications
+  description: Get notification counts
+- name: stats_plugins
+  category: Statistics
+  description: 'List, create, or delete stats plugins (`action`: list/create/delete)'
+- name: stats_ingest
+  category: Statistics
+  description: Ingest external statistics
+- name: certs_list
+  category: Certificates
+  description: List certificates
+- name: certs_generate
+  category: Certificates
+  description: Generate a certificate
+- name: certs_upload
+  category: Certificates
+  description: Upload a certificate
+- name: system_get_time
+  category: System
+  description: Get server time
+- name: system_disk_usage
+  category: System
+  description: Get disk usage overview or detailed consumers (`detail=True`)
+- name: system_cleanup
+  category: System
+  description: Clean up disk space (diagnostics, logs, or results)
+- name: system_eula
+  category: System
+  description: 'Check or accept EULA (`action`: check/accept)'
+- name: system_log_config
+  category: System
+  description: Get or set logging config (omit `config_data` to get, provide to set)
+- name: migration_export
+  category: Migration
+  description: Export controller data
+- name: migration_import
+  category: Migration
+  description: Import controller data

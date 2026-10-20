@@ -1,0 +1,13 @@
+name: Keysight CyPerf authentication
+generated: '2026-10-19'
+method: searched
+source: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md
+docs: https://github.com/Keysight/cyperf-api-wrapper/blob/main/README.md#documentation-for-authorization
+schemes:
+- type: oauth2
+  flow: authorizationCode / refresh token (OpenID Connect via Keycloak)
+  authorizationUrl: /auth/realms/keysight/protocol/openid-connect/auth
+  scopes:
+  - offline_access
+  - openid
+  note: Relative to the customer controller host; SDK examples use an offline refresh token from the CyPerf UI (OFFLINE_TOKEN_FROM_CYPERF_UI).

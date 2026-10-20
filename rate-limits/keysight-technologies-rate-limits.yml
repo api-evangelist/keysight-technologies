@@ -1,0 +1,6 @@
+name: Keysight Technologies rate limits
+generated: '2026-10-19'
+method: none
+limit_count: 0
+limits: []
+note: No published rate limits found in the CyPerf SDK or MCP documentation; www.keysight.com answers 403 to automated clients.

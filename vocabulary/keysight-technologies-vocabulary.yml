@@ -1,0 +1,15 @@
+generated: '2026-10-19'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/_ae-authored/keysight-technologies-openapi-generated.yml
+vocabulary:
+  name: Keysight Technologies Domain Vocabulary
+  description: 'Terms declared by Keysight Technologies''s own API contract: its resource groups, objects and enumerations, with the contract''s
+    definitions. Derived, not authored.'
+  version: '2026-10-19'
+  terms:
+  - term: Api
+    definition: 'Resource group in the contract; its operation GET /api/v2/agents: Get all agents'
+    tags:
+    - Resource Group
+    source: openapi/_ae-authored/keysight-technologies-openapi-generated.yml

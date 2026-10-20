@@ -1,0 +1,213 @@
+name: Keysight CyPerf tool crosswalk
+generated: '2026-10-19'
+method: derived
+source: https://github.com/Keysight/cyperf-mcp/blob/main/README.md
+surfaces:
+  openapi: openapi/_ae-authored/keysight-technologies-openapi-generated.yml (generated from SDK README)
+  mcp: local stdio (cyperf-mcp)
+crosswalk: []
+mcp_only:
+- tool: sessions_list
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_create
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_get
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_delete
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_update
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_get_config
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_save_config
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_load_config
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_get_meta
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_get_test
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_add_applications
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_add_attacks
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_get_applications
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_get_attacks
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_get_app_actions
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_set_app_action_param
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_remove_app_action
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_remove_application
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_remove_attack
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_assign_agents
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_rename_network_segments
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_get_network_segments
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_set_network_ip_range
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_disable_automatic_network
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: sessions_set_objective_and_timeline
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: agents_list
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: agents_get
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: agents_delete
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: agents_update
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: agents_reserve
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: agents_release
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: agents_reboot
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: agents_set_dpdk
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: agents_set_ntp
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: agents_tags
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: agents_export_files
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: configs_list
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: configs_delete
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: configs_update
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: configs_import
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: configs_export_all
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: configs_categories
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: test_start
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: test_stop
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: test_calibrate
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: results_list
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: results_get
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: results_delete
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: results_stats
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: results_files
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: results_download_config
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: results_generate_report
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: results_tags
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: resources_list_apps
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: resources_list_attacks
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: resources_search
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: resources_delete
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: controllers_list
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: controllers_get
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: controllers_nodes
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: controllers_ports
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: controllers_set_app
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: controllers_clear_ports
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: controllers_power_cycle
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: controllers_reboot_port
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: controllers_set_link_state
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: controllers_set_aggregation
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: brokers_list
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: brokers_manage
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: licensing_list_licenses
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: licensing_get_license
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: licensing_activation
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: licensing_sync
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: licensing_get_hostid
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: licensing_reservation
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: licensing_test_connectivity
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: licensing_get_code_info
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: licensing_get_feature_stats
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: licensing_list_servers
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: licensing_manage_server
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: diagnostics_list_components
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: diagnostics_export
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: diagnostics_delete
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: notifications_list
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: notifications_get
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: notifications_delete
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: notifications_manage
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: notifications_get_counts
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: stats_plugins
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: stats_ingest
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: certs_list
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: certs_generate
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: certs_upload
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: system_get_time
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: system_disk_usage
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: system_cleanup
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: system_eula
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: system_log_config
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: migration_export
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+- tool: migration_import
+  reason: wraps cyperf SDK classes; binding to a specific REST operation not established from documentation
+coverage:
+  tools: 100
+  bound: 0
+note: Tools wrap SDK methods that call the REST API, but the docs do not name the backing endpoint per tool, so no row is asserted.
