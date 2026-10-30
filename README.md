@@ -1,4 +1,4 @@
-# Keysight Technologies (keysight-technologies)
+# Keysight Technologies
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,11 +64,108 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Profile for Keysight Technologies in the API Evangelist network. Fortune F1000 (rank 617).
+Keysight Technologies is an electronic design, emulation and test company (Fortune 1000, rank 617). Its developer surface is product-side: the CyPerf network performance and security test platform exposes a REST API (/api/v2, OAuth2/OpenID Connect via a Keycloak 'keysight' realm) on each self-hosted or cloud controller, with an official generated Python SDK (cyperf on PyPI) and an experimental local stdio MCP server (cyperf-mcp, 100 tools). Keysight also publishes ixnetwork-restpy and snappi client libraries and Terraform modules for its virtual test products on GitHub.
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=keysight-technologies-api-evangelist&utm_content=repo)
+**Areas:** Network Testing · Test and Measurement · Performance Testing · Security Testing · Electronics · Traffic Generation · MCP
 
-## Timestamps
+## Keysight Technologies on APIs.io
 
-- **Created:** 2026-05-05
-- **Modified:** 2026-05-05
+Everything profiled for Keysight Technologies is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/keysight-technologies/](https://apis.io/providers/keysight-technologies/)** — or go straight to one of the APIs or properties below.
+
+### APIs (3)
+
+- [Keysight CyPerf REST API](https://apis.io/apis/keysight-technologies/cyperf-rest-api/) — REST API of the Keysight CyPerf controller for managing agents, sessions, configurations, test execution, results, licensing and certificates. The API runs…
+- [Keysight CyPerf MCP Server](https://apis.io/apis/keysight-technologies/cyperf-mcp/) — Experimental local (stdio) Model Context Protocol server published by Keysight that wraps the cyperf Python SDK as 100 tools across 15 categories for…
+- [Keysight Technologies API](https://apis.io/apis/keysight-technologies/keysight-technologies-api/) — Keysight Technologies API as documented publicly: 96 operations. Contract generated from the documentation by API Evangelist (2026-10-19); not the…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Keysight Technologies API Rules](https://apis.io/rules/keysight-technologies/keysight-technologies-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Keysight Technologies Authentication](https://apis.io/security/keysight-technologies/keysight-technologies-authentication/)
+- [Keysight Technologies Domain Security](https://apis.io/security/keysight-technologies/keysight-technologies-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Keysight Technologies Scopes](https://apis.io/scopes/keysight-technologies/keysight-technologies-scopes/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Keysight Technologies Rate Limits](https://apis.io/rate-limits/keysight-technologies/keysight-technologies-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.keysight.com)
+- [Support](https://support.keysight.com/s/)
+- [Terms of service](https://www.keysight.com/us/en/contact/terms-of-use.html)
+- [Privacy policy](https://www.keysight.com/us/en/contact/privacy.html)
+- [GitHub](https://github.com/keysight)
+
+## API Evangelist rating
+
+**Kin Score 35.4** — thin · rubric 0.24.0 · scored 2026-10-19
+
+| Facet | Score |
+|---|---|
+| Discoverability | 63.3 |
+| Contract quality | 22.0 |
+| Contract governance | 79.1 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 21.1 |
+
+**Agent readiness 24.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 34.3** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/keysight-technologies/](https://apis.io/providers/keysight-technologies/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Keysight Technologies: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/keysight-technologies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
